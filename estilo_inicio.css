@@ -1,0 +1,169 @@
+body{
+   background:rgb(30, 30, 32);
+   
+ 
+    
+
+    
+    
+
+}
+
+
+header{
+    
+    box-shadow: 1px 3px 6px rgba(19, 18, 18, 0.781);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: rgba(8, 53, 77, 0.857);
+    
+    min-height: 80px;
+    position: fixed;
+    top:-10px;
+    z-index: 1;
+    width:100%;
+    
+    
+        
+}
+
+.logo{
+    
+    display: flex;
+    align-items: center;
+    font-family:system-ui;
+    margin-left: -155px;
+
+}
+.logo img{
+    height: 60px;
+    margin-right: 10px;
+    margin-top: 5px;
+    
+
+}
+.nombre-organizacion{
+    font-family:Play;
+    color: rgb(27, 230, 0);
+    font-size: 18px;
+}
+a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav {
+margin: 10px;
+font-family:sans-serif;
+
+
+}
+nav a{
+    padding: 10px;
+    padding-top: 15px;
+    text-decoration: none;
+    color: rgb(23, 228, 242);
+    font-weight: 600;
+    font-family: play;
+
+
+
+}
+nav a:hover{
+    color: rgb(117, 210, 12);
+
+}
+.menu{
+    display: none;
+    height: 50px;
+    float: right;
+    top: 40px;
+    cursor: pointer;
+    
+
+}
+#check{
+    display: none;
+}
+.bienvenido{
+    margin: 10%;
+    margin-top: 90px;
+    
+}
+aside p{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: rgb(20, 160, 160);
+    font-family: Play;
+    text-align: center;
+}
+@media (max-width:700px){
+
+    header{
+        flex-direction: row-reverse;
+        height: 20px;
+        
+    }
+    .menu{
+        display: block;
+        order: 4;
+        
+
+    }
+    .logo{
+        margin-left: 8px;
+    }
+    
+
+        
+    .logo img {
+        height: 50px;
+    }
+    
+    
+
+        
+    header nav{
+        position: fixed;
+        width: 96%;
+        height: 100vh;
+        background: rgba(27, 25, 25, 0.89);
+        top: 70px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 100;
+
+    }
+    header nav a{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav a:hover. nav a.active{
+        background: red;
+    }
+    #check:checked ~ nav{
+        left: 0;
+    }  
+    .bienvenido{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 80px;
+    }  
+}
+    
+
+    
+
+    
+    
+
+    
+
+   
+   
+
+
+
