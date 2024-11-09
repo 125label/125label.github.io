@@ -1,189 +1,146 @@
-body{
-    background:rgb(30, 30, 32);
-    
-  
-     
- 
-     
-     
- 
- }
- 
- 
- header{
-     
-     box-shadow: 1px 3px 6px rgba(19, 18, 18, 0.781);
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 10px;
-     background: rgba(8, 53, 77, 0.857);
-     
-     min-height: 80px;
-     position: fixed;
-     top:-10px;
-     z-index: 1;
-     width:100%;
-     
-     
-         
- }
- 
- .logo{
-     
-     display: flex;
-     align-items: center;
-     font-family:system-ui;
-     margin-left: -155px;
- 
- }
- .logo img{
-     height: 60px;
-     margin-right: 10px;
-     margin-top: 5px;
-     
- 
- }
- .nombre-organizacion{
-     font-family:Play;
-     color: rgb(27, 230, 0);
-     font-size: 18px;
- }
- a{
-     padding-top: 10px;
-     padding-bottom: 10px;
- }
- nav {
- margin: 10px;
- font-family:sans-serif;
- 
- 
- }
- nav a{
-     padding: 10px;
-     padding-top: 15px;
-     text-decoration: none;
-     color: rgb(23, 228, 242);
-     font-weight: 600;
-     font-family: play;
- 
- 
- 
- }
- nav a:hover{
-     color: rgb(117, 210, 12);
- 
- }
- .menu{
-     display: none;
-     height: 50px;
-     float: right;
-     top: 40px;
-     cursor: pointer;
-     
- 
- }
- .app{
-    margin-left: 100px;
-    margin-right: 100px;
-    width: 250px;
+/* Reset básico para asegurar consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Play', sans-serif;
+}
+
+/* Estilos de contenido principal */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
- #check{
-     display: none;
- }
- h1{
-    font-size: 19px;
-    padding: 10px;
-    color: aqua;
+
+/* Cabecera */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
 }
- .goclean{
-    background: rgb(7, 7, 7);
-    border: 2px solid rgb(200, 25, 25);
-    color: rgb(32, 213, 32);
+
+/* Logo y título */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nombre-organizacion {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/* Botón de menú para pantallas pequeñas */
+.checkbtn {
+    display: none;
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+/* Estilos para el título y contenido del blog */
+.goclean {
+    margin-top: 20px;
+}
+
+.titulo {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.goclean p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.goclean img.app {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Estilos de Aside */
+aside {
+    background-color: #f4f4f4;
     padding: 20px;
-   margin: 20px;
-   display: block;
-   margin-top: 80px;
-   
-    
-    
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #333;
+}
 
- }
- aside p{
-     margin-right: 10px;
-     margin-left: 10px;
-     color: rgb(20, 160, 160);
-     font-family: Play;
-     text-align: center;
- }
- @media (max-width:800px){
- 
-     header{
-         flex-direction: row-reverse;
-         height: 20px;
-         
-     }
-     .menu{
-         display: block;
-         order: 4;
-         
- 
-     }
-     .logo{
-         margin-left: 8px;
-     }
-     
- 
-         
-     .logo img {
-         height: 50px;
-     }
-     
-     
- 
-         
-     header nav{
-         position: fixed;
-         width: 96%;
-         height: 100vh;
-         background: rgba(27, 25, 25, 0.89);
-         top: 70px;
-         left: 100%;
-         text-align: center;
-         transition: all .5s;
-         z-index: 100;
- 
-     }
-     header nav a{
-         display: block;
-         margin: 50px;
-         line-height: 30px;
-     }
-     nav a:hover. nav a.active{
-         background: red;
-     }
-     #check:checked ~ nav{
-         left: 0;
-     }  
-     .bienvenido{
-         margin-left: 10px;
-         margin-right: 10px;
-         margin-top: 80px;
-     }  
-     .goclean{
-        background: rgb(7, 7, 7);
-        border: 2px solid rgb(200, 25, 25);
-        color: rgb(32, 213, 32);
-        padding: 20px;
-       margin: 20px;
-       display: block;
-       margin-top: 80px;
+aside p {
+    line-height: 1.5;
+    text-align: center;
+}
 
+/* Adaptación a dispositivos móviles */
+@media (max-width: 768px) {
+    /* Cambiar el layout de la cabecera y navegación */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    
-    .app{
-    margin: 20px 20px;
-    padding: 5px;
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
     }
- }
+
+    /* Botón de menú para móviles */
+    .checkbtn {
+        display: block;
+    }
+
+    /* Ocultar el menú de navegación cuando el checkbox no está marcado */
+    #check:checked ~ nav {
+        display: flex;
+    }
+
+    #check:not(:checked) ~ nav {
+        display: none;
+    }
+
+    /* Ajuste de imágenes y textos */
+    .logo img {
+        height: 40px;
+    }
+
+    .nombre-organizacion {
+        font-size: 1.2em;
+    }
+
+    .titulo {
+        font-size: 1.5em;
+    }
+}
