@@ -1,8 +1,22 @@
 
 body{
-    background:rgb(30, 30, 32)
-    
+    background:rgb(30, 30, 32);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Play', sans-serif;
    }
+   .servicios{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10%;
+    margin-top: 60px;
+    height: 1000px;
+    background-color: rgb(138, 126, 120);
+    width: 80%;
+    justify-content: center;
+    padding: 1%;                                           
+    }
 
 
 header{
@@ -12,15 +26,11 @@ header{
     align-items: center;
     padding: 10px;
     background: rgba(8, 53, 77, 0.857);
-    
-    min-height: 80px;
+   margin: 10%;
+   margin-top: -20px;
     position: fixed;
-    top:-10px;
     z-index: 1;
-    width:100%
-    
-    
-        
+    width: 80%;
 }
 .logo{
     display: flex;
@@ -31,9 +41,11 @@ header{
 
 }
 .logo img{
-    height: 60px;
+    max-width: 67px;
+    max-height: 60px;
     margin-right: 10px;
     margin-top: 5px;
+    
     
 
 }
@@ -75,17 +87,15 @@ nav a:hover{
 #check{
     display: none;
 }
-.servicios{
-    position: relative;
-    top: 100px;
-    margin-left: 9%;
-    margin-right: 9%;
-    
-    }
+
+
 
 .servicios h1{
     padding-left: 10px;
     color: rgb(36, 207, 207);
+    background: darkgoldenrod;
+    height: 4%;
+    width: 100%;
     
 
 }
@@ -94,13 +104,14 @@ nav a:hover{
     height: 360px;
     width: 300px;
     display: inline-block;
-    margin: 10px;
+    margin: 5px;
     text-transform: lowercase;
-    background: rgba(64, 68, 61, 0.678);
+    background: rgb(18, 17, 17);
     overflow: hidden;
-    padding: 10px;
+    padding: 8px;
     font-family: Play;
     transition: .5s;
+
     
 }
 
@@ -109,7 +120,7 @@ nav a:hover{
 	transform: translateY(-15px);
 }
 .nombre-producto{
-    color: aqua;
+    color: rgb(24, 211, 217);
     padding: 2px;
     display: inline-block;
     font-size: 15px;
@@ -125,13 +136,42 @@ nav a:hover{
     font-size: 17px;
     
 }
+footer p{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: rgb(20, 160, 160);
+    font-family: Play;
+    text-align: center;
+}
 
 
 @media (max-width:700px){
 
+    .servicios{
+        flex-wrap: wrap;
+        display: flex;
+        padding: 6px;
+        height: 1700px;
+        margin: 1px auto;
+        width: auto;
+        background: rgb(44, 42, 42);
+        
+    }
+    h1{
+        display: block;
+    }
+
     header{
         flex-direction: row-reverse;
-        height: 20px;
+         width: 95%;
+         height: 70px;
+         padding: 5px;
+        position: fixed;
+        display: flex;
+        margin:10px;
+        margin-top: -17px;
+        align-items: center;
+    
         
         
     }
@@ -174,9 +214,12 @@ nav a:hover{
     #check:checked ~ nav{
         left: 0;
     }  
-    .bienvenido{
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 60px;
-    }  
+    footer p{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: rgb(20, 160, 160);
+    font-family: Play;
+    text-align: center;
+}
+ 
 }
