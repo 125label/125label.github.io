@@ -10,11 +10,13 @@ body{
     flex-wrap: wrap;
     margin: 10%;
     margin-top: auto;
+    height: 505px;
     background-color: rgb(124, 117, 109);
     height: 1009px;
     width: 80%;
     justify-content: center;
-   
+    
+    
     
 }
  
@@ -31,10 +33,10 @@ body{
     z-index: 1;
     width: 80%;
 
-    
-        }
+  }
  
  .logo{
+     
      display: flex;
      align-items: center;
      font-family:system-ui;
@@ -102,23 +104,22 @@ body{
     padding: 10px;
     color: aqua;
 }
- .goclean{
+ .tresnet{
     background: rgb(16, 14, 14);
     color: rgb(32, 213, 32);
    margin: 20px;
    
    margin-top: 100px;
    flex: 1; /* Ocupa el espacio principal */
-  padding: 1px;
+  padding: 10px;
    height: 850px;
-   width: 540px;
+   width: 310px;
 }
 p{
-    text-indent: 15px; /* Ajusta el valor de la sangría */
-    line-height: 1.6; /* Opcional: mejora la separación entre líneas */
-
+        text-indent: 30px; /* Ajusta el valor de la sangría */
+        line-height: 1.5; /* Opcional: mejora la separación entre líneas */
+    
 }
-
  
  aside {
     flex: 0 0 300px; /* Ancho fijo de 300px en pantallas grandes */
@@ -144,12 +145,12 @@ aside ul li a{
 }
  @media (max-width:800px){
     .container{
-        height: 145px;
-        flex-wrap: wrap;
-        display: flex;
-        padding: 3px;
-        height: 1500px;
-        
+    
+    flex-wrap: wrap;
+    display: flex;
+    padding: 3px;
+   height: 1500px;
+    
     }
  
      header{
@@ -158,9 +159,9 @@ aside ul li a{
          height: 70px;
          padding: 5px;
         position: fixed;
+        margin: 10px;
         display: flex;
-        margin:10px;
-        margin-top: auto;
+        margin-top:auto;
         align-items: center;
         
         }
@@ -209,27 +210,26 @@ aside ul li a{
          margin-right: 10px;
          margin-top: 80px;
      }  
-     .goclean{
-        
-        justify-content: center;
+     .tresnet{
+        flex-direction: column;
         background: rgb(7, 7, 7);
         color: rgb(32, 213, 32);
         padding: 20px;
        margin: 20px;
-       display:inline-block;
+       display: inline-block;
        margin-top: 80px;
-       height: 1160px;
+       height: 1110px;
 
-     }
-     aside{
+    }
+    aside{
         flex-wrap: wrap-reverse;
         margin-top: -11px;
         height: 190px;
     }
     
+    
     .app{
-   display: block;
-   margin: 0 auto;
+    display: block;
+    margin: 0 auto;
     }
-   
-}
+ }
