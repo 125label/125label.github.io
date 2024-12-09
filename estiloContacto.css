@@ -1,5 +1,9 @@
 body{
+<<<<<<< HEAD
     background: black;
+=======
+    background: rgb(26, 26, 32);
+>>>>>>> e5bc2dffb1d8adf43b197e0ed544ea1a4e6db107
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -86,7 +90,11 @@ section{
     margin: 10%;
     margin-top: auto;
     height: 505px;
+<<<<<<< HEAD
     background-color:  rgb(44, 42, 42);
+=======
+    background-color: rgb(45, 40, 33);
+>>>>>>> e5bc2dffb1d8adf43b197e0ed544ea1a4e6db107
     height: 1000px;
     width: 80%;
     justify-content: center;
@@ -99,7 +107,11 @@ section{
 	position: relative;
 	width: 229px;
 	height: 400px;
+<<<<<<< HEAD
 	background-color:rgba(18, 16, 16, 0.611);
+=======
+	background-color:rgba(158, 145, 145, 0.194);
+>>>>>>> e5bc2dffb1d8adf43b197e0ed544ea1a4e6db107
 	border-radius: 5px;
 	overflow: hidden;
 	transition: .5s;
@@ -258,12 +270,26 @@ footer p{
         left: 0;
     }
     section{
+<<<<<<< HEAD
         flex-wrap: wrap;
         display: flex;
         padding: 6px;
         height: 1975px;
         margin: 1px auto;
         width: auto;
+=======
+        padding: 1%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10%;
+        margin-top: auto;
+        height: 505px;
+        background-color: rgb(45, 40, 33);
+        height: 2100px;
+        width: 80%;
+        justify-content: center;
+        margin-bottom: 55px;
+>>>>>>> e5bc2dffb1d8adf43b197e0ed544ea1a4e6db107
     }
     
     

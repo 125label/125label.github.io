@@ -148,6 +148,7 @@ footer p{
 @media (max-width:700px){
 
     .servicios{
+<<<<<<< HEAD
         flex-wrap: wrap;
         display: flex;
         padding: 6px;
@@ -155,6 +156,14 @@ footer p{
         margin: 1px auto;
         width: auto;
         background: rgb(44, 42, 42);
+=======
+        height: 145px;
+        flex-wrap: wrap;
+        display: flex;
+        padding: 3px;
+        height: 1700px;
+        margin-top: 80px;
+>>>>>>> e5bc2dffb1d8adf43b197e0ed544ea1a4e6db107
         
     }
     h1{

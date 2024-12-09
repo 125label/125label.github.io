@@ -12,7 +12,11 @@ body{
     margin: 10%;
     margin-top: auto;
     height: 505px;
+<<<<<<< HEAD
     background-color: rgb(44, 42, 42);
+=======
+    background-color: rgb(43, 37, 31);
+>>>>>>> e5bc2dffb1d8adf43b197e0ed544ea1a4e6db107
     height: 1009px;
     width: 80%;
     justify-content: center;
@@ -111,12 +115,20 @@ footer{
 }
 @media (max-width:700px){
     .container{
+<<<<<<< HEAD
         flex-wrap: wrap;
         display: flex;
         padding: 6px;
         height: 1700px;
         margin: 1px auto;
         width: auto;
+=======
+        height: 145px;
+        flex-wrap: wrap;
+        display: flex;
+        padding: 3px;
+        height: 1500px;
+>>>>>>> e5bc2dffb1d8adf43b197e0ed544ea1a4e6db107
     }
 
     header{
